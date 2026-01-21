@@ -1,0 +1,6 @@
+CREATE LOGIN [AZUREAD\UrmiVashi]
+    FROM WINDOWS WITH DEFAULT_LANGUAGE = [us_english];
+
+
+GO
+

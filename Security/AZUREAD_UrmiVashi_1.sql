@@ -1,0 +1,5 @@
+CREATE USER [AZUREAD\UrmiVashi] FOR LOGIN [AZUREAD\UrmiVashi];
+
+
+GO
+

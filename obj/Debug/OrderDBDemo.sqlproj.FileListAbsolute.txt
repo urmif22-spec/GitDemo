@@ -1,0 +1,5 @@
+c:\Users\UrmiVashi\Documents\GitHub\OrderDBDemo\bin\Debug\OrderDBDemo.dacpac
+c:\Users\UrmiVashi\Documents\GitHub\OrderDBDemo\obj\Debug\Model.xml
+c:\Users\UrmiVashi\Documents\GitHub\OrderDBDemo\obj\Debug\refactor.xml
+c:\Users\UrmiVashi\Documents\GitHub\OrderDBDemo\obj\Debug\postdeploy.sql
+c:\Users\UrmiVashi\Documents\GitHub\OrderDBDemo\obj\Debug\predeploy.sql

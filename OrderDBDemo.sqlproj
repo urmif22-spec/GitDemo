@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build">
+  <Sdk Name="Microsoft.Build.Sql" Version="2.0.0" />
+  <PropertyGroup>
+    <Name>OrderDBDemo</Name>
+    <ProjectGuid>{4F767C4D-86F2-4659-8D55-FFA12AE49B31}</ProjectGuid>
+    <DSP>Microsoft.Data.Tools.Schema.Sql.Sql160DatabaseSchemaProvider</DSP>
+    <ModelCollation>1033, CI</ModelCollation>
+    <EnableDefaultSqlItems>False</EnableDefaultSqlItems>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Include=".vscode\tasks.json" />
+    <None Include="OrderDBDemo_1.publish.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Build Include="Security\Ref.sql" />
+    <Build Include="Security\Cust.sql" />
+    <Build Include="Ref\Tables\Product.sql" />
+    <Build Include="Cust\Tables\Customer.sql" />
+    <Build Include="Tran\Schema\Tran.sql" />
+    <Build Include="Tran\Tables\OrderHeader.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <SqlCmdVariable Include="Seeddata">
+      <Value>$(SqlCmdVar__1)</Value>
+      <DefaultValue>True</DefaultValue>
+    </SqlCmdVariable>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Script" />
+  </ItemGroup>
+  <ItemGroup>
+    <PostDeploy Include="Script\Script.PostDeployment1.sql" />
+  </ItemGroup>
+  <!--<ItemGroup>
+    <Folder Include="Tran" />
+    <Folder Include="Tran\Schema" />
+    <Folder Include="Tran\Tables" />
+  </ItemGroup>-->
+  <Target Name="BeforeBuild">
+    <Delete Files="$(BaseIntermediateOutputPath)\project.assets.json" />
+  </Target>
+</Project>

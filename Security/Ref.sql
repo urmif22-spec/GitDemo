@@ -1,0 +1,6 @@
+CREATE SCHEMA [Ref]
+    AUTHORIZATION [dbo];
+
+
+GO
+
